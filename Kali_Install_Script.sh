@@ -228,6 +228,12 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Bucketeer Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+sudo apt-get install padbuster
+
+echo "-------------------------------------------------------------------"
+echo "--------------- padbuster Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
 git clone https://github.com/DanMcInerney/icebreaker.git
 cd icebreaker
 ./setup.sh
@@ -293,6 +299,90 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Wifite2 Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+sudo git clone https://github.com/codingo/NoSQLMap.git
+cd NoSQLMap
+sudo python setup.py install
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- NoSQLMap Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo git clone https://github.com/trustedsec/social-engineer-toolkit/ setoolkit/
+cd setoolkit
+sudo pip3 install -r requirements.txt
+sudo python3 setup.py
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- setoolkit Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo pip3 install aclpwn
+
+echo "-------------------------------------------------------------------"
+echo "--------------- aclpwn Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo pip3 install --upgrade usbrip
+
+echo "-------------------------------------------------------------------"
+echo "--------------- usbrip Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo wget https://github.com/SecureAuthCorp/impacket/releases/download/impacket_0_9_21/impacket-0.9.21.tar.gz
+sudo tar -xvf impacket-0.9.21.tar.gz
+sudo rm impacket-0.9.21.tar.gz
+sudo chmod 755 impacket-0.9.21
+cd impacket-0.9.21
+sudo pip3 install .
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Impacket Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo apt install wifiphisher
+
+echo "-------------------------------------------------------------------"
+echo "--------------- wifiphisher Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+
+sudo apt install exiv2
+
+echo "-------------------------------------------------------------------"
+echo "--------------- exiv2 Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo apt-get install steghide -y
+
+echo "-------------------------------------------------------------------"
+echo "--------------- steghide Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo pip3 install stegcracker
+
+echo "-------------------------------------------------------------------"
+echo "--------------- stegcracker Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo git clone --depth 1 https://github.com/v1s1t0r1sh3r3/airgeddon.git
+cd airgeddon/
+sudo chmod +x airgeddon.sh
+cd /opt
+
+
+echo "-------------------------------------------------------------------"
+echo "--------------- airgeddon Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+pip3 install --upgrade wfuzz
+
+echo "-------------------------------------------------------------------"
+echo "--------------- airgeddon Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
 sudo git clone https://github.com/s0lst1c3/eaphammer.git
 cd eaphammer
 ./kali-setup
@@ -351,6 +441,19 @@ echo "-------------------------------------------------------------------"
 echo "--------------- air hammer Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+pip3 list --outdated --format=freeze | grep -v '^-e' | cut -d = -f 1 | xargs -n1 pip3 install -U
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Fixed outdated Python issues ---------"
+echo "-------------------------------------------------------------------"
+
 echo "-------------------------------------------------------------------"
 echo "--------------- All Tools Installed/Updated! Go Break Some Stuff! ---------"
 echo "-------------------------------------------------------------------"
+echo "-------------------------------------------------------------------"
+echo "--- If you've ran this script as the non-root user,-------"
+echo "----you might have to run the following commands to fix-----------"
+echo "----Python scripts path-related warnings--------------"
+echo "PATH=$HOME/.local/bin:$HOME/bin:$PATH"
+echo "export PATH"
+
