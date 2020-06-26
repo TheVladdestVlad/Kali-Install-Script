@@ -383,6 +383,16 @@ echo "-------------------------------------------------------------------"
 echo "--------------- airgeddon Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+sudo git clone https://github.com/aboul3la/Sublist3r.git
+cd Sublist3r/
+sudo pip3 install -r requirements.txt
+sudo python3 setup.py install
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Sublist3r Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
 sudo git clone https://github.com/s0lst1c3/eaphammer.git
 cd eaphammer
 ./kali-setup
