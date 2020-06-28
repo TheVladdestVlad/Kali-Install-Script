@@ -11,6 +11,7 @@ apt-get install brutespray -y
 apt-get install -y gobuster
 apt-get install -y amass
 apt-get install -y masscan
+apt-get install awscli -y
 pip3 install ldapdomaindump
 pip3 install adidnsdump
 
@@ -380,7 +381,7 @@ echo "-------------------------------------------------------------------"
 pip3 install --upgrade wfuzz
 
 echo "-------------------------------------------------------------------"
-echo "--------------- airgeddon Installed, Next Tool! ----------------"
+echo "--------------- wfuzz Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo git clone https://github.com/aboul3la/Sublist3r.git
@@ -391,6 +392,12 @@ cd /opt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Sublist3r Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+git clone https://github.com/gwen001/s3-buckets-finder.git
+
+echo "-------------------------------------------------------------------"
+echo "--------------- s3-buckets-finder Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo git clone https://github.com/s0lst1c3/eaphammer.git
@@ -480,4 +487,7 @@ echo "-------------------------------------------------------------------"
 echo "--------------- All Tools Installed/Updated! Go Break Some Stuff! ---------"
 echo "-------------------------------------------------------------------"
 
-
+echo "--------------- For s3-buckets-finder you'll need to run  ----------------"
+echo "--------------------- aws configure ----------------------"
+echo "---and, if needed, install Google-related requirements -----"
+echo "-----https://github.com/s0lst1c3/eaphammer     ----------------"
