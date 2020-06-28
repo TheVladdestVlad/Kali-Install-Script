@@ -462,6 +462,14 @@ echo "-------------------------------------------------------------------"
 echo "--------------- air hammer Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+
+printf '\nPATH="$HOME/.local/bin:$HOME/bin:$PATH"\n' >> ~/.profile
+source ~/.profile
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Added ~/.local/bin and ~/bin to PATH ----------------"
+echo "-------------------------------------------------------------------"
+
 pip3 list --outdated --format=freeze | grep -v '^-e' | cut -d = -f 1 | xargs -n1 pip3 install -U
 
 echo "-------------------------------------------------------------------"
@@ -471,10 +479,5 @@ echo "-------------------------------------------------------------------"
 echo "-------------------------------------------------------------------"
 echo "--------------- All Tools Installed/Updated! Go Break Some Stuff! ---------"
 echo "-------------------------------------------------------------------"
-echo "-------------------------------------------------------------------"
-echo "--- If you've ran this script as the non-root user,-------"
-echo "----you might have to run the following commands to fix-----------"
-echo "----Python scripts path-related warnings--------------"
-echo "PATH=$HOME/.local/bin:$HOME/bin:$PATH"
-echo "export PATH"
+
 
