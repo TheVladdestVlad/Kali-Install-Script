@@ -398,8 +398,19 @@ cd eaphammer
 ./kali-setup
 cd /opt
 
+
 echo "-------------------------------------------------------------------"
 echo "--------------- eaphammer Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+
+sudo git clone https://github.com/s0md3v/XSStrike.git
+cd XSStrike
+sudo pip3 install -r requirements.txt
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- XSStrike Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo git clone https://github.com/epinna/tplmap.git
