@@ -309,6 +309,15 @@ echo "-------------------------------------------------------------------"
 echo "--------------- NoSQLMap Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+git clone https://github.com/gwen001/github-search.git
+cd github-search/
+pip3 install -r requirements3.txt
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- github-search Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
 sudo git clone https://github.com/trustedsec/social-engineer-toolkit/ setoolkit/
 cd setoolkit
 sudo pip3 install -r requirements.txt
