@@ -152,7 +152,10 @@ mkdir /usr/share/wordlists/SecLists
 mkdir /usr/share/wordlists/SecLists/Discovery
 mkdir /usr/share/wordlists/SecLists/Discovery/Web_Content
 wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/raft-large-words.txt -O /usr/share/wordlists/SecLists/Discovery/Web_Content/raft-large-words.txt
+wget https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/IIS.fuzz.txt -O /usr/share/wordlists/SecLists/Discovery/Web_Content/IIS.fuzz.txt
 
+mkdir /usr/share/wordlists/subdomain
+wget https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt -O /usr/share/wordlists/subdomain/all.txt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Wordlists Installed, Next Tool! ----------------"
