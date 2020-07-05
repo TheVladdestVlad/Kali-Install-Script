@@ -141,6 +141,19 @@ wget https://gist.githubusercontent.com/nullenc0de/538bc891f44b6e8734ddc6e151390
 wget https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt -O /root/gist/all.txt
 wget https://gist.githubusercontent.com/nullenc0de/9cb36260207924f8e1787279a05eb773/raw/0197d33c073a04933c5c1e2c41f447d74d2e435b/params.txt -O /root/gist/params.txt
 
+mkdir /usr/share/wordlists/RobotsDisallowed
+wget https://raw.githubusercontent.com/danielmiessler/RobotsDisallowed/master/top10.txt -O /usr/share/wordlists/RobotsDisallowed/top10.txt
+wget https://raw.githubusercontent.com/danielmiessler/RobotsDisallowed/master/top100.txt -O /usr/share/wordlists/RobotsDisallowed/top100.txt
+wget https://raw.githubusercontent.com/danielmiessler/RobotsDisallowed/master/top1000.txt -O /usr/share/wordlists/RobotsDisallowed/top1000.txt
+wget https://raw.githubusercontent.com/danielmiessler/RobotsDisallowed/master/top10000.txt -O /usr/share/wordlists/RobotsDisallowed/top10000.txt
+wget https://raw.githubusercontent.com/danielmiessler/RobotsDisallowed/master/curated.txt -O /usr/share/wordlists/RobotsDisallowed/curated.txt
+
+mkdir /usr/share/wordlists/SecLists
+mkdir /usr/share/wordlists/SecLists/Discovery
+mkdir /usr/share/wordlists/SecLists/Discovery/Web_Content
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/Web-Content/raft-large-words.txt -O /usr/share/wordlists/SecLists/Discovery/Web_Content/raft-large-words.txt
+
+
 echo "-------------------------------------------------------------------"
 echo "--------------- Wordlists Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
