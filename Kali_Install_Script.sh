@@ -197,13 +197,22 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Metasploit configured, Next Phase -----------------"
 echo "-------------------------------------------------------------------"
 
-git clone https://github.com/byt3bl33d3r/DeathStar
+sudo git clone https://github.com/byt3bl33d3r/DeathStar
 cd DeathStar
-pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
 cd /opt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- DeathStar Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo git clone https://github.com/nsonaniya2010/SubDomainizer.git
+cd SubDomainizer
+sudo pip3 install -r requirements.txt
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- SubDomainizer Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 git clone https://github.com/ztgrace/changeme.git
