@@ -14,6 +14,7 @@ apt-get install -y masscan
 apt-get install awscli -y
 pip3 install ldapdomaindump
 pip3 install adidnsdump
+pip3 install truffleHog
 
 export GOPATH=/opt/wildcheck
 go get -u github.com/theblackturtle/wildcheck
@@ -119,6 +120,11 @@ export GOPATH=/opt/gf
 go get -u github.com/tomnomnom/gf
 ln -s /opt/gf/bin/gf /usr/local/bin/gf
 #source /opt/gf/src/github.com/tomnomnom/gf/gf-completion.bash
+
+# GitRob
+export GOPATH=/opt/gitrob
+go get -u github.com/michenriksen/gitrob
+ln -s /opt/gitrob/bin/gitrob /usr/local/bin/gitrob
 
 # Assetfinder
 export GOPATH=/opt/assetfinder
@@ -349,6 +355,18 @@ sudo git clone https://github.com/trustedsec/social-engineer-toolkit/ setoolkit/
 cd setoolkit
 sudo pip3 install -r requirements.txt
 sudo python3 setup.py
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- setoolkit Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo git clone https://github.com/darkoperator/dnsrecon.git
+cd dnsrecon
+sudo pip3 install -r requirements.txt
+sudo python3 setup.py build
+sudo python3 setup.py install
+sudo python3 setup.py clean
 cd /opt
 
 echo "-------------------------------------------------------------------"
