@@ -370,7 +370,7 @@ sudo python3 setup.py clean
 cd /opt
 
 echo "-------------------------------------------------------------------"
-echo "--------------- setoolkit Installed, Next Tool! ----------------"
+echo "--------------- dnsrecon Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo pip3 install aclpwn
