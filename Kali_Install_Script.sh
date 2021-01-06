@@ -121,6 +121,11 @@ go get -u github.com/tomnomnom/gf
 ln -s /opt/gf/bin/gf /usr/local/bin/gf
 #source /opt/gf/src/github.com/tomnomnom/gf/gf-completion.bash
 
+# HTTPX
+export GOPATH=/opt/httpx
+GO111MODULE=on go get -v github.com/projectdiscovery/httpx/cmd/httpx
+ln -s /opt/httpx/bin/httpx /usr/local/bin/httpx
+
 # GitRob
 export GOPATH=/opt/gitrob
 go get -u github.com/michenriksen/gitrob
