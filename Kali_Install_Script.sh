@@ -61,7 +61,7 @@ go get -u github.com/lc/gau
 ln -s /opt/gau/bin/gau /usr/local/bin/gau
 
 export GOPATH=/opt/tko-subs
-go get github.com/anshumanbh/tko-subs
+go get -u github.com/anshumanbh/tko-subs
 ln -s /opt/tko-subs/bin/tko-subs /usr/local/bin/tko-subs
 
 export GOPATH=/opt/webanalyze
@@ -73,7 +73,7 @@ go get -u github.com/lc/otxurls
 ln -s /opt/otxurls/bin/otxurls /usr/local/bin/otxurls
 
 export GOPATH=/opt/hakrawler
-go get github.com/hakluke/hakrawler
+go get -u github.com/hakluke/hakrawler
 ln -s /opt/hakrawler/bin/hakrawler /usr/local/bin/hakrawler
 
 export GOPATH=/opt/qsreplace
@@ -82,7 +82,7 @@ ln -s /opt/qsreplace/bin/qsreplace /usr/local/bin/qsreplace
 
 #subjack
 export GOPATH=/opt/subjack
-go get github.com/haccer/subjack
+go get -u github.com/haccer/subjack
 ln -s /opt/subjack/bin/subjack /usr/local/bin/subjack
 
 #gwdomains
@@ -123,7 +123,7 @@ ln -s /opt/gf/bin/gf /usr/local/bin/gf
 
 # HTTPX
 export GOPATH=/opt/httpx
-GO111MODULE=on go get -v github.com/projectdiscovery/httpx/cmd/httpx
+GO111MODULE=on go get -u -v github.com/projectdiscovery/httpx/cmd/httpx
 ln -s /opt/httpx/bin/httpx /usr/local/bin/httpx
 
 # GitRob
