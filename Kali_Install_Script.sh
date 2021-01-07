@@ -507,6 +507,16 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Seth Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+
+git clone https://github.com/projectdiscovery/subfinder.git
+cd subfinder/v2/cmd/subfinder
+go build .
+mv -f subfinder /usr/local/bin/
+cd /opt
+echo "-------------------------------------------------------------------"
+echo "--------------- subfinder Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
 git clone https://github.com/Arvanaghi/SessionGopher.git
 
 git clone https://github.com/AlessandroZ/LaZagne.git
