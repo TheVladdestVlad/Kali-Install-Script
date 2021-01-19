@@ -209,13 +209,22 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Metasploit configured, Next Phase -----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/byt3bl33d3r/DeathStar
+sudo git clone https://github.com/byt3bl33d3r/DeathStar.git
 cd DeathStar
 sudo pip3 install -r requirements.txt
 cd /opt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- DeathStar Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo git clone https://github.com/m0rtem/CloudFail.git
+cd CloudFail
+sudo pip3 install -r requirements.txt
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- CloudFail Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo git clone https://github.com/nsonaniya2010/SubDomainizer.git
