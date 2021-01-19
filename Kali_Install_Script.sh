@@ -57,7 +57,7 @@ go get -u github.com/tomnomnom/hacks/get-title
 ln -s /opt/get-title/bin/get-title /usr/local/bin/get-title
 
 export GOPATH=/opt/gau
-go get -u github.com/lc/gau
+GO111MODULE=on go get -u -v github.com/lc/gau
 ln -s /opt/gau/bin/gau /usr/local/bin/gau
 
 export GOPATH=/opt/tko-subs
