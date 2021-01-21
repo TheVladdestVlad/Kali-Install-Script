@@ -5,16 +5,16 @@
 #I decided on a modifiable script instead. When I started to build the script, 
 #I built upon the foundation that Matthew Clark May had used in a Repository he created, but no longer maintains. Credit where it's due.
 
-apt-get update ; apt-get -y upgrade ; apt-get -y dist-upgrade ; apt-get -y autoremove ; apt-get -y autoclean ; echo
+apt-get update ; apt-get -y upgrade ; apt-get -y dist-upgrade ; apt-get -y autoremove ; apt-get -y autoclean ; echo ;
 
-apt-get install brutespray -y
-apt-get install -y gobuster
-apt-get install -y amass
-apt-get install -y masscan
-apt-get install awscli -y
-pip3 install ldapdomaindump
-pip3 install adidnsdump
-pip3 install truffleHog
+apt-get install brutespray -y;
+apt-get install -y gobuster;
+apt-get install -y amass;
+apt-get install -y masscan;
+apt-get install awscli -y;
+pip3 install ldapdomaindump;
+pip3 install adidnsdump;
+pip3 install truffleHog;
 
 export GOPATH=/opt/wildcheck
 go get -u github.com/theblackturtle/wildcheck
