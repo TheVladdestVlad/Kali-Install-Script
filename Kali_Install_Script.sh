@@ -8,7 +8,7 @@
 apt-get update ; apt-get -y upgrade ; apt-get -y dist-upgrade ; apt-get -y autoremove ; apt-get -y autoclean ; echo ;
 
 apt-get install brutespray -y;
-apt-get install -y gobuster;
+# apt-get install -y gobuster;
 apt-get install -y amass;
 apt-get install -y masscan;
 apt-get install awscli -y;
@@ -79,6 +79,11 @@ ln -s /opt/hakrawler/bin/hakrawler /usr/local/bin/hakrawler
 export GOPATH=/opt/qsreplace
 go get -u github.com/tomnomnom/qsreplace
 ln -s /opt/qsreplace/bin/qsreplace /usr/local/bin/qsreplace
+
+#gobuster
+export GOPATH=/opt/gobuster
+go get -u github.com/OJ/gobuster
+ln -s /opt/gobuster/bin/gobuster /usr/local/bin/gobuster
 
 #subjack
 export GOPATH=/opt/subjack
