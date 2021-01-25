@@ -232,6 +232,27 @@ echo "-------------------------------------------------------------------"
 echo "--------------- CloudFail Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+
+git clone https://github.com/GerbenJavado/LinkFinder.git
+cd LinkFinder
+python3 setup.py install
+ln -s /opt/LinkFinder/linkfinder.py /usr/local/bin/linkfinder.py
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- LinkFinder Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+git clone https://github.com/m4ll0k/SecretFinder.git secretfinder
+cd secretfinder
+pip install -r requirements.txt
+sudo ln -s /opt/secretfinder/SecretFinder.py /usr/local/bin/SecretFinder.py
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- SecretFinder Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
 sudo git clone https://github.com/nsonaniya2010/SubDomainizer.git
 cd SubDomainizer
 sudo pip3 install -r requirements.txt
@@ -303,7 +324,7 @@ pip3 install -r requirements.txt
 cd /opt
 
 echo "-------------------------------------------------------------------"
-echo "--------------- Linked2username Installed, Next Tool! ----------------"
+echo "--------------- LinkedIn2username Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 git clone https://github.com/ZerBea/hcxdumptool.git
